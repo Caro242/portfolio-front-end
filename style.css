@@ -1,0 +1,13 @@
+.todo{
+    background-color:#82A2F1;
+}
+.header, .nombre {
+    background-color:#82A2F1;
+}
+.banner {
+   background-color: black;
+  }
+.mensaje{
+    background-color: white;
+    box-sizing: content-box;
+}

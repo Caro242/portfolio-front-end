@@ -8,24 +8,76 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2287a0cc28.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class=" container-fluid bg-info" >
-        <div class="row p-1 align-middle">
+    <div class="header container-fluid" >
+        <div class="row p-1 align-items-center ">
             <div class='col'>Carolina Romero</div>
-            <a href= '' class="col-1 text-dark">Linkedin</a>
-            <a href= ''class="col-1 text-dark">Instagram</a>
-            <a href= ''class="col-1 text-dark">Behance</a>
-            <button type="button" class='btn btn-primary col-1 btn-sm'>Login</button>
+            <div class='col-1'>
+              <a href= 'https://www.linkedin.com/in/carolina-romero-0a9a67213/' class="text-dark" target="_blank"><i class="	fab fa-linkedin"></i></a>
+              <a href= 'https://www.instagram.com/caro_romero24/'class="text-dark" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href= 'https://www.behance.net/carolinaromero24'class="text-dark" target="_blank"><i class="fab fa-behance"></i></a>
+            </div>
+            <button type="button" class='btn btn-dark col-1 btn-sm ' data-bs-toggle="modal" data-bs-target="#myModal">Ingresar </button>
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <form action="/action_page.php">
+                    <div class="mb-3 mt-3">
+                      <label for="email" class="form-label">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="pwd" class="form-label">Password:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="pswd">
+                    </div>
+                    <div class="form-check mb-3">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Recordar
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                  </form> 
+                  </div>
         </div>
   </div>
-    <div class="container-fluid bg-dark">
-      <img src="./images/fondo.jpg" class="img-fluid mx-auto d-block" style="height:350px; width:1265px">
+    <div class="banner">
+      <img src="./images/fondo.png" class="mx-auto d-block">
     </div>
-    <div class="mensaje"></div>
-    <div class="education"></div>
-    <div class="skills"></div>
-    <div class="proyect"></div>
+      <div class="nombre" class="row bg-info">
+          <div class="row" >
+            <img class="card-img-top rounded-circle" src="./images/perfil2.jpeg" style="height:200px; width:auto">
+          </div>
+            <div class="card-body" >
+              <h4 class="card-title">Carolina Romero</h4>
+              <p class="card-text">Diseñadora UX-UI</p>
+              <p class="card-text">Córdoba,Argentina</p>
+              <button type="button" class="btn-sm btn-dark" href="">Contacto</button>
+              <button type="button" class="btn-sm btn-outline-dark"href="">Intereses</button>
+              <button type="button" class="btn-sm btn-outline-dark"href="">Añadir sección</button>
+              <button type="button" class="btn-sm btn-outline-dark"href="">Más</button> 
+          </div>
+   <div class="mensaje container-fluid row  "class="mx-auto d-block" >
+    <div class="col-3">
+      <h4 class="col-3">Acerca de:</h4>
+      <p>Diseño UX-UI. Front-end.</p>
+    </div>
+    <div class="col-3">
+      <h4 class="col-3">Educación</h4>
+      <p>CoderHouse</p>
+      <p>Diseño Ux-Ui; Ux Research; Diseño Ux-Ui avanzado,Ux Writing</p>
+    </div>
+    <div class="col-3">
+      <h4 class="col">Habilidades</h4>
+    </div>
+    <div class="col-1">
+      <button type="button" class="btn btn-outline-dark" href="">editar</button>
+      </div>
+  </div>
+    <div class="proyect container-fluid row">
+      <h4 class="col">Proyectos</h4>
+    </div>
     <div class="footer"></div>
   </body>
 </html>
